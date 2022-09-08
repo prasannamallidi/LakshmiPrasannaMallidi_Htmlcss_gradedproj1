@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <form class="form-container">
+        <div class="form-inner-container">
+           <div class="form-wrapper">
+            <div name="labform">
+                <div class="form-section">
+                    <div><h3>1. Your Contact Details</h3></div>
+                    <div class="form-section-input">
+                        <input type="text" placeholder="Full Name" required/>
+                        <input type="text" placeholder="Patient id if exist" />
+                        <input type="text" placeholder="Contact Number" required/>
+                        <input type="text" placeholder="Email Id" required/>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div><h3>2. Address</h3></div>
+                    <div class="form-section-input">
+                        <input type="text" placeholder="House Number"/>
+                        <input type="text" placeholder="Street" required/>
+                        <input type="text" placeholder="Area" required/>
+                        <select placeholder="District" required>
+                            <option selected>District1</option>
+                            <option>District1</option>
+                            <option>District1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div><h3>3. Choose the Test type <span>(Check atleast one without fail)</span></h3></div>
+                    <div class="form-section-input">
+                        <div>
+                            <input type="checkbox" name="testtype" value="CBC">
+                            <label > CBC</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"  name="testtype" value="Complete Urine">
+                            <label > Complete Urine</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="testtype" value="Lipid profile">
+                            <label> Lipid profile</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"  name="testtype" value=" Glucose Test">
+                            <label> Glucose Test</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div><h3>4. Do you want a hard copy of the report?</span></h3></div>
+                    <div class="form-section-input">
+                        <div>
+                            <input type="radio" name="optionReport" value="Yes">
+                            <label>Yes</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" name="optionReport" value="No">
+                            <label>No</label><br>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div><h3>5. Select your comfortable date and time</span></h3></div>
+                    <div class="form-section-input">
+                        <div>
+                            <input type="date">
+                            <label>Date</label><br>
+                        </div>
+                        <div>
+                            <input type="time">
+                            <label>Time</label><br>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="image-wrapper"></div>
+        </div>
+        <div class="button-container">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
