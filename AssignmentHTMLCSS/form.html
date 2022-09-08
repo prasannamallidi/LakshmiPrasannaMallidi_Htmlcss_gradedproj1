@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pharmacy Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form>
+            <div class="form-tile">
+                <div class="form-tile-element">
+                    <div>
+                        <h3>
+                            1. Your Contact Details
+                        </h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fullname">Full Name</label>
+                                </td>
+                                <td>
+                                    <label for="patientid">Patient Id if exists</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="fname" name="fname">
+                                </td>
+                                <td>
+                                    <input type="text" id="patientid" name="patientid">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="contactno">Contact Number</label>
+                                </td>
+                                <td>
+                                    <label for="emailid">Email Id</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" id="contactid" name="contactid">
+                                </td>
+                                <td>
+                                    <input type="email" id="emailid" name="emailid">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h3>
+                            2. Address
+                        </h3>
+                        <table>
+                                <tr>
+                                    <td>
+                                        <label for="hnumber">House Number</label>
+                                    </td>
+                                    <td>
+                                        <label for="street">Street</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="hnumber" name="hnumber">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="street" name="street">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="area">Area</label>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" id="area" name="area">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="district">District</label>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="district" id="district">
+                                            <option value="Choose">Choose</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Mandya">Mandya</option>
+                                            <option value="Ramnagar">Ramnagar</option>
+                                            <option value="Ramnagar">Ramnagar</option>
+                                          </select>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    <h3>
+                        3. Test Type(Check atleast one box without fail)
+                    </h3>
+                    
+                    <input type="checkbox" id="CBC" name="CBC" value="CBC">
+                      <label for="CBC">CBC</label><br>
+                      <input type="checkbox" id="urine" name="urine" value="Complete Urine">
+                      <label for="urine">Complete Urine</label><br>
+                      <input type="checkbox" id="lipid" name="lipid" value="Lipid Profile">
+                      <label for="lipid">Lipid Profile</label><br>
+                        <input type="checkbox" id="TSH" name="TSH" value="TSH">
+                      <label for="TSH">Thyroid Stimulating Hormone</label><br>
+                    <input type="checkbox" id="glucose" name="glucose" value="Glucose Test">
+                      <label for="glucose">Glucose Test</label><br>
+                    <h3>
+                        4. Do you want a hard copy of the report?
+                    </h3>
+                    <input type="radio" id="copyyes" name="copyyes" value="Yes">
+                    <label for="copyyes">Yes</label><br>
+                    <input type="radio" id="copyno" name="copyno" value="No">
+                    <label for="copyno">No</label><br>
+                    <h3>
+                        5. Select your comfortable date and time
+                    </h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="date">Date</label>
+                            </td>
+                            <td>
+                                <label for="time">time</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date" name="date" value="date"/>
+                            </td>
+                            <td>
+                                <input type="time" name="time" value="time"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-tile-element">
+                    <img src="Lab-Test/lab-test.jpg" class="form-img">
+                </div>
+            </div>
+            <div>
+                <span><button>Reset</button></span>
+                <span><button>submit</button></span>
+            </div>
+        </form>
+    </body>
+</html>
